@@ -1,8 +1,15 @@
 @charset "UTF-8";
 
+/*Para ver na versão mobile entre no celular e abra novamente a página clicando na escrita "concurso agrinho" para ver da maneira correta*/
+
 body{
-    background-color: #c2bfbd;
+    background-color: #ececec;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    @media ( max-width: 900px ) {
+          width: 100%;
+      }
+      
 }
 
 header{
@@ -11,7 +18,15 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999px;
+
+  @media ( max-width: 900px ) {
+    background-color: #0072bb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 59%;
+}
+ 
 }
 
 header a {
@@ -25,29 +40,22 @@ header a {
 
 header .logo {
   font-size: 25px;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @media ( max-width: 900px ) {
+    font-size: 18px;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 }
 
 header a:hover{
   background-color: #ddd;
   color: #0072bb;
   border-radius: 20px;
-}
-
-header b {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 25px 25px 25px 37px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-header b:hover {
-  background-color: #0072bb;
-  color: #0072bb;   
 }
 
 .rodape {
@@ -92,6 +100,7 @@ h2{
   color: #ddd;
   text-align: left;
   margin: 5px 5px 15px 25px;
+
 }
 
 h3{
@@ -101,6 +110,7 @@ h3{
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+
 }
 
 li {
@@ -116,6 +126,11 @@ li {
     padding-left: 15%;
     padding-bottom: 50px;
     width: 70%;
+
+    @media ( max-width: 900px ) {
+    padding-bottom: 50px;
+    width: 70%;
+    }
 }
 
 .imagem{
@@ -137,18 +152,36 @@ li {
   height: 20%;
   width: 100%;
   padding-bottom: 20px;
+
+  @media ( max-width: 900px ) {
+    height: 40%;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
 }
 
 .icone{
     width: 5%;
     position: fixed;
-    margin: 7% 0 0 93%;
+    margin: 6% 0 0 93%;
     padding: 0;
     border: 0;
     font: inherit;
     display:block;
-    transition: width 1s, height 1s;
+    transition: all 0.5s;
+
+     @media ( max-width: 900px ) { 
+    width: 8%;
+    position: fixed;
+    margin: 6% 0 0 46%;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    display:block;
+    transition: all 0.5s;
   }
+}
   
 .icone:hover {
     width: 6%;
@@ -163,8 +196,16 @@ li {
     width: 1200px;
     margin: 60px auto;
     box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
-    background: #fc2929;
+    background: #ff1010;
     border-radius: 10px;
+
+    @media ( max-width: 900px ) { 
+      width: 500px;
+    margin: 60px auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
+    background: #ff1010;
+    border-radius: 10px;
+    }
 }
 
 .paragrafi {
@@ -179,21 +220,39 @@ li {
   padding: 60px 0px 60px 0px;
 }
 
+/*infelizmente o procurador de hemocentros não funciona até o momento */
+
 section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px, 45px;
-  background: #fc2929;
+  background: #ff0303;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 20px ;
   border-radius: 10px;
+
+   @media ( max-width: 900px ) { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px, 10px;
+  background: #ff0303;
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 20px ;
+   }
 }
 
 section h2 {
   color: #ddd;
   font-size: 2.5rem;
   margin: 2rem;
+
+  @media ( max-width: 900px ) {  
+  color: #ddd;
+  font-size: 30px;
+  margin: 2rem;
+    }
 }
 
 section form {
@@ -201,6 +260,13 @@ section form {
   flex-direction: column;
   width: 50%;
   padding: 0 0 40px 0;
+
+  @media ( max-width: 900px ) { 
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 0 0 40px 0;
+}
 }
 
 form label {
@@ -216,6 +282,7 @@ form input {
   margin-bottom: 20px;
   font-size: 15px;
   transition:  all 0.5s;
+
 }
 
 form textarea {
@@ -255,15 +322,34 @@ form button:hover {
     width: 800px;
     text-align: center;
     background-size: 100%;
-    background-color: #fc2929;
+    background-color: #ff0000;
     transition: width 1s, height 1s;
     box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
+    transition: all 0.5s;
+
+    @media ( max-width: 900px ) {
+    display: inline-block;
+    padding: 20px 80px;
+    margin: 20px 20px;
+    border-radius: 17px;
+    width: 270px;
+    text-align: center;
+    background-size: 100%;
+    background-color: #ff0000;
+    transition: width 1s, height 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
+    transition: all 0.5s;
+}
 }
 
 .lista a:hover {
-    opacity: 0.7;
     width: 900px;
-    background-color: #843961;
+    background-color: #ad0000;
+
+    @media ( max-width: 900px ) {
+     width: 280px;
+    background-color: #ad0000;
+    }
 }
 
 .richas {
