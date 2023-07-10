@@ -13,25 +13,25 @@ body{
 }
 
 header{
-  background-color: #0072bb;
+  background-color: #b5b9f7;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
 
   @media ( max-width: 900px ) {
-    background-color: #0072bb;
+    background-color: #ececec;
     position: fixed;
     top: 0;
     left: 0;
-    width: 59%;
+    width: 73%;
 }
- 
 }
 
 header a {
   float: left;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 25px 25px 25px 37px;
   text-decoration: none;
@@ -41,8 +41,8 @@ header a {
 header .logo {
   font-size: 25px;
   margin-left: 15%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 
   @media ( max-width: 900px ) {
     font-size: 18px;
@@ -53,13 +53,43 @@ header .logo {
 }
 
 header a:hover{
-  background-color: #ddd;
-  color: #0072bb;
+  background-color: #292929;
+  color: #ffffff;
   border-radius: 20px;
 }
 
+.parallax {
+  background-image: url(titulo1.jpg);
+  min-height: 950px;
+  background-attachment: fixed;
+  background-position: 66%;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  box-shadow: rgba(0.4, 0, 0, 0.4) 8px 20px 40px;
+}
+
+.parallax1 {
+  background-image: url(doacao.jpeg);
+  min-height: 950px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  box-shadow: rgba(0.4, 0, 0, 0.4) 8px 20px 40px;
+}
+
+.parallax2 {
+  background-image: url(diamundial.jpg);
+  min-height: 950px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: rgba(0.4, 0, 0, 0.4) 8px 20px 40px;
+}
+
 .rodape {
-    background-color: #01753b;
+    background-color: #750901;
     overflow: hidden;
   }
 
@@ -152,9 +182,10 @@ li {
   height: 20%;
   width: 100%;
   padding-bottom: 20px;
+  padding-top: 60px;
 
   @media ( max-width: 900px ) {
-    height: 40%;
+    height: 60%;
     width: 100%;
     padding-bottom: 20px;
     padding-top: 70px;
@@ -164,7 +195,7 @@ li {
 .icone{
     width: 5%;
     position: fixed;
-    margin: 6% 0 0 93%;
+    margin: -6% 0 0 93%;
     padding: 0;
     border: 0;
     font: inherit;
@@ -174,7 +205,7 @@ li {
      @media ( max-width: 900px ) { 
     width: 8%;
     position: fixed;
-    margin: 6% 0 0 46%;
+    margin: -6% 0 0 60%;
     padding: 0;
     border: 0;
     font: inherit;
