@@ -21,7 +21,7 @@ header{
   box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
 
   @media ( max-width: 900px ) {
-    background-color: #ececec;
+    background-color: #b5b9f7;
     position: fixed;
     top: 0;
     left: 0;
