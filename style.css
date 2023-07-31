@@ -60,7 +60,7 @@ header a:hover{
 
 .parallax {
   background-image: url(titulo1.jpg);
-  min-height: 950px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: 66%;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ header a:hover{
 
 .parallax1 {
   background-image: url(doacao.jpeg);
-  min-height: 950px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ header a:hover{
 
 .parallax2 {
   background-image: url(diamundial.jpg);
-  min-height: 950px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
