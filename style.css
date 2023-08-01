@@ -390,3 +390,7 @@ form button:hover {
   text-align: center;
   color: #ffffff;
 }
+
+p a:hover {
+  color: rgb(243, 223, 40);
+}
