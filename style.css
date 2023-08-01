@@ -3,8 +3,8 @@
 /*Para ver na versão mobile entre no celular e abra novamente a página clicando na escrita "concurso agrinho" para ver da maneira correta*/
 
 body{
-    background-color: #ececec;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #535353;
+    font-family: 'Inter', sans-serif;;
 
     @media ( max-width: 900px ) {
           width: 100%;
@@ -13,7 +13,7 @@ body{
 }
 
 header{
-  background-color: #b5b9f7;
+  background-color: #fc3527;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ header{
   box-shadow: rgba(0, 0, 0, 0.4) 8px 20px 40px;
 
   @media ( max-width: 900px ) {
-    background-color: #b5b9f7;
+    background-color: #fc3527;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@ header{
 
 header a {
   float: left;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   padding: 25px 25px 25px 37px;
   text-decoration: none;
@@ -64,7 +64,7 @@ header a:hover{
   background-attachment: fixed;
   background-position: 66%;
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 120%;
   box-shadow: rgba(0.4, 0, 0, 0.4) 8px 20px 40px;
 }
 
@@ -74,7 +74,7 @@ header a:hover{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 110%;
+  background: size 95%;
   box-shadow: rgba(0.4, 0, 0, 0.4) 8px 20px 40px;
 }
 
@@ -101,6 +101,7 @@ h1{
     font-size: 30px;
     text-align: left;
     font-weight: bold;
+    color: white;
 }
 
 h4{   
@@ -111,7 +112,7 @@ h4{
   font-size: 45px;
   text-align: center;
   font-weight: bold;
-  color: #a500bb;
+  color: #ed62ff;
 }
 
 p{
@@ -122,6 +123,7 @@ p{
   margin-bottom: 20px;
   font-size: 25px;
   text-align: left;
+  color: white;
 }
 
 h2{
@@ -140,7 +142,7 @@ h3{
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-
+  color: white;
 }
 
 li {
