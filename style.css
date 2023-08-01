@@ -391,6 +391,10 @@ form button:hover {
   color: #ffffff;
 }
 
+p a:visited {
+  color: white;
+}
+
 p a:hover {
   color: rgb(243, 223, 40);
 }
